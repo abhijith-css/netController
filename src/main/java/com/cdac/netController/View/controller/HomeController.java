@@ -37,7 +37,7 @@ public class HomeController {
     }
     @PostMapping("/validate")
     public String validate(@ModelAttribute UserDto user, Model model){
-
+        String response =loginservice.validateUser(user);
         model.addAttribute("user", user);
         return "login";
     }

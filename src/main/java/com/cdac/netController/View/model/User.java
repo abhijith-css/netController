@@ -3,11 +3,11 @@ package com.cdac.netController.View.model;
 import jakarta.persistence.*;
 
 @Entity
-@Table(name="user")
+@Table(name="userDetails")
 public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    Long id;
+    Integer id;
     String userName;
     String password;
 }
