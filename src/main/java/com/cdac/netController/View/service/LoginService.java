@@ -1,6 +1,6 @@
 package com.cdac.netController.View.service;
 
-public interface loginService  {
+public interface LoginService {
 
     String showMain();
 }
