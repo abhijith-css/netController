@@ -8,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 
 @Controller
@@ -23,23 +24,23 @@ public class HomeController {
         return "Home";
     }
 
-    @GetMapping(value ="/main")
-    public String showMain(){
-       return "";
-    }
     @GetMapping("/login")
     public String login(){
         return "login";
     }
-    @GetMapping("/index")
-    public String index(){
-        return "index";
-    }
+
+
     @PostMapping("/validate")
-    public String validate(@ModelAttribute UserDto user, Model model){
+    public String validate(@ModelAttribute UserDto user, Model model, RedirectAttributes redirectAttributes){
+        log.info("username {} and password {}",user.getUsername(),user.getPassword());
         String response =loginservice.validateUser(user);
-        model.addAttribute("user", user);
-        return "login";
+        if ("success".equals(response)) {
+            return "redirect:/MainPage";
+        } else {
+            redirectAttributes.addAttribute("error", "Invalid Email or Invalid password");
+            return "redirect:/login";
+        }
+
     }
 
 

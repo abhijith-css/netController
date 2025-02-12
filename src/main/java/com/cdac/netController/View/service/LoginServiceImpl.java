@@ -8,8 +8,12 @@ public class LoginServiceImpl implements LoginService {
 
 
     @Override
-    public String validateUser(UserDto user) {
+    public String validateUser(UserDto user){
 
-        return "";
+            if (user.getUsername().equals("admin") && user.getPassword().equals("admin")) {
+                return "success";
+            } else {
+                return "failed";
+            }
     }
 }
