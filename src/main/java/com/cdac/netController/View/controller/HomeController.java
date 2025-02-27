@@ -29,6 +29,11 @@ public class HomeController {
         return "login";
     }
 
+    @GetMapping("/MainPage")
+    public String MainPage(){
+        return "MainPage";
+    }
+
 
     @PostMapping("/validate")
     public String validate(@ModelAttribute UserDto user, Model model, RedirectAttributes redirectAttributes){

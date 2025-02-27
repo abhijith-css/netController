@@ -9,4 +9,5 @@ import lombok.NoArgsConstructor;
 public class NoSuchUserException extends RuntimeException {
         private String message;
 
+
 }

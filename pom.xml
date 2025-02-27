@@ -56,6 +56,56 @@
 			<scope>runtime</scope>
 		</dependency>
 		<!--<dependency>
+			<groupId>org.projectfloodlight</groupId>
+			<artifactId>openflowj</artifactId>
+			<version>3.6.605</version>
+		</dependency>-->
+		<!--<dependency>
+			<groupId>org.projectfloodlight</groupId>
+			<artifactId>openflowj</artifactId>
+			<version>3.6.601</version>
+		</dependency>-->
+		<!--<dependency>
+			<groupId>net.floodlightcontroller</groupId>
+			<artifactId>floodlight</artifactId>
+			<version>1.2</version>
+			<scope>system</scope>
+			<systemPath>${project.basedir}/lib/floodlight.jar</systemPath>
+		</dependency>-->
+		<!--<dependency>
+			<groupId>org.opendaylight.controller</groupId>
+			<artifactId>sal-core-api</artifactId>
+			<version>1.11.3</version>
+		</dependency>
+		<dependency>
+			<groupId>org.opendaylight.controller</groupId>
+			<artifactId>sal-core-spi</artifactId>
+			<version>1.11.3</version>
+		</dependency>
+		<dependency>
+			<groupId>org.opendaylight.controller</groupId>
+			<artifactId>sal-binding-api</artifactId>
+			<version>1.11.3</version>
+		</dependency>
+		&lt;!&ndash; OpenDaylight OpenFlow Plugin &ndash;&gt;
+		<dependency>
+			<groupId>org.opendaylight.openflowplugin</groupId>
+			<artifactId>openflowplugin-api</artifactId>
+			<version>0.19.1</version>
+		</dependency>
+		&lt;!&ndash; https://mvnrepository.com/artifact/org.opendaylight.mdsal/mdsal-dom-api &ndash;&gt;
+		<dependency>
+			<groupId>org.opendaylight.mdsal</groupId>
+			<artifactId>mdsal-dom-api</artifactId>
+			<version>14.0.9</version>
+		</dependency>
+		&lt;!&ndash; OpenDaylight YANG Tools &ndash;&gt;
+		<dependency>
+			<groupId>org.opendaylight.yangtools</groupId>
+			<artifactId>yang-data-api</artifactId>
+			<version>14.0.9</version>
+		</dependency>-->
+		<!--<dependency>
 			<groupId>com.h2database</groupId>
 			<artifactId>h2</artifactId>
 			<scope>runtime</scope>
